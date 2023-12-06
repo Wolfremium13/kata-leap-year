@@ -3,8 +3,8 @@ import org.junit.jupiter.api.Test
 
 class LeapYearShould {
     @Test
-    fun `foo`() {
-        assertThat(true).isTrue()
+    fun `not be a leap year`() {
+        assertThat(Year.isLeapYear(1999)).isFalse()
     }
 
 }
