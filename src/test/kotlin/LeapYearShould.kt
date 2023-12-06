@@ -7,4 +7,9 @@ class LeapYearShould {
         assertThat(Year.isLeapYear(1999)).isFalse()
     }
 
+    @Test
+    fun `be a leap year when is a typical common year`() {
+        assertThat(Year.isLeapYear(2020)).isTrue()
+    }
+
 }
