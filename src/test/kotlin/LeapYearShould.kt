@@ -17,4 +17,9 @@ class LeapYearShould {
         assertThat(Year.isLeapYear(1900)).isFalse()
     }
 
+    @Test
+    fun `be a leap year when is an atypical special year`() {
+        assertThat(Year.isLeapYear(2000)).isTrue()
+    }
+
 }
